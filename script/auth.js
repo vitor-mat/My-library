@@ -1,5 +1,19 @@
 
-async function signInWithGoogle(){
+function nextPage(token){
+  console.log("funcionou")
+  console.log(token)
+
+  if(token){
+    window.location.href = "../pages/home.html"
+  }
+  setTimeout(() => {
+    window.location.href = "../index.html"
+  }, 2000)
+}
+
+
+export function signInWithGoogle(){
+
     let provider =  new firebase.auth.GoogleAuthProvider();
 
     firebase.auth()
@@ -11,14 +25,8 @@ async function signInWithGoogle(){
       // This gives you a Google Access Token. You can use it to access the Google API.
       var token = credential.accessToken;
       // The signed-in user info.
+      nextPage(token)
 
-      const  { displayName, photoURL, uid } = result.user;
-
-      const nome = document.querySelector("#nome")
-      const image = document.querySelector("#btn-google")
-
-      nome.innerHTML = displayName
-      image.src = photoURL
       // ...
     }).catch((error) => {
       // Handle Errors here.
@@ -32,10 +40,4 @@ async function signInWithGoogle(){
     });
 }
 
-function test(){
-    const constante = firebase.auth
-    console.log(constante)
-}
-
-document.querySelector("#btn-google").addEventListener("click", signInWithGoogle)
-
+export let nome = "vitor"
