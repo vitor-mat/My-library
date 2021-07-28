@@ -4,10 +4,10 @@ function nextPage(token){
   console.log(token)
 
   if(token){
-    window.location.href = "../pages/home.html"
+    window.location.href = "https://vitor-mat.github.io/My-library/pages/home.html"
   }
   setTimeout(() => {
-    window.location.href = "../index.html"
+    window.location.href = "https://vitor-mat.github.io/My-library"
   }, 2000)
 }
 
