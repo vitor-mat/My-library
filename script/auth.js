@@ -11,7 +11,14 @@ async function signInWithGoogle(){
       // This gives you a Google Access Token. You can use it to access the Google API.
       var token = credential.accessToken;
       // The signed-in user info.
-      var user = result.user;
+
+      const  { displayName, photoURL, uid } = result.user;
+
+      const nome = document.querySelector("#nome")
+      const image = document.querySelector("#btn-google")
+
+      nome.innerHTML = displayName
+      image.src = photoURL
       // ...
     }).catch((error) => {
       // Handle Errors here.
@@ -30,4 +37,5 @@ function test(){
     console.log(constante)
 }
 
-  document.querySelector("#btn-google").addEventListener("click", signInWithGoogle)
+document.querySelector("#btn-google").addEventListener("click", signInWithGoogle)
+
