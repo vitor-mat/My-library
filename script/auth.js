@@ -1,3 +1,9 @@
+export const user = {
+  id: "",
+  name: "",
+  avatar: ""
+}
+
 
 function nextPage(token){
   console.log("funcionou")
@@ -25,8 +31,15 @@ export function signInWithGoogle(){
       // This gives you a Google Access Token. You can use it to access the Google API.
       var token = credential.accessToken;
       // The signed-in user info.
+
+      const  { displayName, photoURL, uid } = result.user;
+
       nextPage(token)
 
+      user.name = displayName
+      user.avatar = photoURL
+      user.id = uid
+      
       // ...
     }).catch((error) => {
       // Handle Errors here.
@@ -39,5 +52,3 @@ export function signInWithGoogle(){
       // ...
     });
 }
-
-export let nome = "vitor"
