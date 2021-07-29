@@ -1,12 +1,12 @@
-import { user } from "../script/auth.js"
+import { userMame, avatar, id } from "../script/auth.js"
 
 function showUserDatas(){
-    document.getElementById("name-person").innerHTML = user.name;
-    document.getElementById("picture-user").src = user.avatar
+    document.getElementById("name-person").innerHTML = userName;
+    document.getElementById("picture-user").src = avatar
 
-    console.log(user.name)
-    console.log(user.avatar)
-    console.log(user.id)
+    console.log(userName)
+    console.log(avatar)
+    console.log(id)
 }
 
 showUserDatas()

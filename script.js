@@ -1,3 +1,3 @@
-import { signInWithGoogle } from "./script/auth.js"
+import { signInWithGoogle, test } from "./script/auth.js"
 
-document.querySelector("#btn-google").addEventListener("click", signInWithGoogle)
+document.querySelector("#btn-google").addEventListener("click", test)

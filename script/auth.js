@@ -1,20 +1,12 @@
-export const user = {
-  id: "",
-  name: "",
-  avatar: ""
-}
+  let id = "vitcholas"
+  let userName = "Vitão"
+  let avatar = "Vitor"
 
 
-function nextPage(token){
-  console.log("funcionou")
-  console.log(token)
 
-  if(token){
-    window.location.href = "https://vitor-mat.github.io/My-library/pages/home.html"
-  }
-  setTimeout(() => {
-    window.location.href = "https://vitor-mat.github.io/My-library"
-  }, 2000)
+function nextPage(){
+
+    window.location.href = "http://127.0.0.1:5500/pages/home.html"
 }
 
 
@@ -34,12 +26,12 @@ export function signInWithGoogle(){
 
       const  { displayName, photoURL, uid } = result.user;
 
-      nextPage(token)
+      nextPage()
 
-      user.name = displayName
-      user.avatar = photoURL
-      user.id = uid
-      
+      user.name = "displayName"
+      user.avatar = "photoURL"
+      user.id =" uid"
+
       // ...
     }).catch((error) => {
       // Handle Errors here.
@@ -51,4 +43,18 @@ export function signInWithGoogle(){
       var credential = error.credential;
       // ...
     });
+}
+
+export function test(){
+  userName = "displayName"
+  avatar = "photoURL"
+  id = "uid"
+
+  nextPage()
+}
+
+export{
+  id,
+  userName,
+  avatar
 }
