@@ -1,5 +1,5 @@
 function nextPage(){
-    window.location.href = "https://vitor-mat.github.io/pages/home.html"
+    window.location.href = "https://vitor-mat.github.io/My-library/pages/home.html"
 }
 
 

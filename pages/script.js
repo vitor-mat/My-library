@@ -1,8 +1,6 @@
-import { userMame, avatar, id } from "../script/auth.js"
-
 function showUserDatas(){
-    document.getElementById("name-person").innerHTML = userName;
-    document.getElementById("picture-user").src = avatar
+    document.getElementById("name-person").innerHTML = localStorage.getItem("userName");
+    document.getElementById("picture-user").src = localStorage.getItem("avatar")
 
     console.log(userName)
     console.log(avatar)
