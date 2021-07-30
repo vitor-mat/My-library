@@ -1,6 +1,5 @@
 function nextPage(){
-
-    window.location.href = "http://127.0.0.1:5500/pages/home.html"
+    window.location.href = "https://vitor-mat.github.io/pages/home.html"
 }
 
 
@@ -20,9 +19,7 @@ export function signInWithGoogle(){
 
       const  { displayName, photoURL, uid } = result.user;
 
-      nextPage()
-
-      localStorage.setItem("userName", userName)
+      localStorage.setItem("userName", displayName)
       localStorage.setItem("avatar", photoURL)
       localStorage.setItem("id", uid)
 
