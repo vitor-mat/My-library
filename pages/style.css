@@ -52,6 +52,18 @@ nav{
     border-right: 2px solid black;
 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+
+    position: relative;
+}
+
+#sign-out-icon{
+    width: 40px;
+
+    position: absolute;
+    top: 20px;
+    left: 80%;
+
+    cursor: pointer;
 }
 
 #picture-user{
@@ -67,6 +79,9 @@ nav{
 
 #name-person{
     margin-bottom: 10px;
+    color: var(--white-color);
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 ul{
