@@ -7,7 +7,7 @@ function showUserDatas(){
 
 showUserDatas()
 
-document.getElementById("").addEventListener("click", () => {
+document.getElementById("sign-out-icon").addEventListener("click", () => {
 
     localStorage.removeItem("userName");
     localStorage.removeItem("avatar");
@@ -19,5 +19,9 @@ document.getElementById("").addEventListener("click", () => {
 })
 
 function initialPage(){
-    window.location.href = "https://vitor-mat.github.io/My-library/index.html";
+    window.location.href = "https://vitor-mat.github.io/My-library/";
 }
+
+document.getElementById("nav-item-instructions").addEventListener("click", () => {
+    
+})
