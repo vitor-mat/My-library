@@ -1,4 +1,4 @@
-import { signOutWithGoogle } from ";;/script/auth";
+import { signOutWithGoogle } from "../script/auth";
 
 function showUserDatas(){
     document.getElementById("name-person").innerHTML = localStorage.getItem("userName");
