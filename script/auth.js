@@ -1,9 +1,3 @@
-  let id = "vitcholas"
-  let userName = "Vitão"
-  let avatar = "Vitor"
-
-
-
 function nextPage(){
 
     window.location.href = "http://127.0.0.1:5500/pages/home.html"
@@ -28,9 +22,11 @@ export function signInWithGoogle(){
 
       nextPage()
 
-      user.name = "displayName"
-      user.avatar = "photoURL"
-      user.id =" uid"
+      localStorage.setItem("userName", userName)
+      localStorage.setItem("avatar", photoURL)
+      localStorage.setItem("id", uid)
+
+      nextPage()
 
       // ...
     }).catch((error) => {
@@ -43,18 +39,4 @@ export function signInWithGoogle(){
       var credential = error.credential;
       // ...
     });
-}
-
-export function test(){
-  userName = "displayName"
-  avatar = "photoURL"
-  id = "uid"
-
-  nextPage()
-}
-
-export{
-  id,
-  userName,
-  avatar
 }
