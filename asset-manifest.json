@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/My-library/static/css/main.a617e044.chunk.css",
+    "main.js": "/My-library/static/js/main.057134a4.chunk.js",
+    "main.js.map": "/My-library/static/js/main.057134a4.chunk.js.map",
+    "runtime-main.js": "/My-library/static/js/runtime-main.f273cb18.js",
+    "runtime-main.js.map": "/My-library/static/js/runtime-main.f273cb18.js.map",
+    "static/js/2.2ed970b0.chunk.js": "/My-library/static/js/2.2ed970b0.chunk.js",
+    "static/js/2.2ed970b0.chunk.js.map": "/My-library/static/js/2.2ed970b0.chunk.js.map",
+    "static/js/3.d5860a32.chunk.js": "/My-library/static/js/3.d5860a32.chunk.js",
+    "static/js/3.d5860a32.chunk.js.map": "/My-library/static/js/3.d5860a32.chunk.js.map",
+    "index.html": "/My-library/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/My-library/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.2ed970b0.chunk.js.LICENSE.txt": "/My-library/static/js/2.2ed970b0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/My-library/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f273cb18.js",
+    "static/js/2.2ed970b0.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.057134a4.chunk.js"
+  ]
+}
